@@ -11,13 +11,23 @@
 </head>
 <body>
 
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="mailto:muhammadbenkhaled@gmail.com" class="nav-logo"><i class="fas fa-envelope"></i> Contact</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+        </div>
+    </div>
+</nav>
+
 <section class="hero">
     <div class="hero-content">
         <div class="profile-image">
-            <img src="profile.jpg" alt="Muhammad Khaled" id="profile-img" style="display:none;">
-            <span class="profile-placeholder" id="profile-placeholder">
-                <i class="fas fa-user"></i>
-            </span>
+            <img src="assets/profile.jpg" alt="Muhammad Khaled" id="profile-img">
         </div>
         <div class="hero-badge">
             <i class="fas fa-briefcase"></i> Open to Work
@@ -35,7 +45,7 @@
             <a href="mailto:muhammadbenkhaled@gmail.com" class="btn btn-outline">
                 <i class="fas fa-envelope"></i> Contact Me
             </a>
-            <a href="resume.pdf" class="btn btn-outline" download>
+            <a href="Muhammad_Khaled_CV.pdf" class="btn btn-outline" download>
                 <i class="fas fa-file-pdf"></i> Download CV
             </a>
         </div>
@@ -45,22 +55,27 @@
     </div>
 </section>
 
-<div class="contact-bar">
-    <a href="tel:+201029036889"><i class="fas fa-phone"></i> +20 102 903 6889</a>
-    <a href="mailto:muhammadbenkhaled@gmail.com"><i class="fas fa-envelope"></i> muhammadbenkhaled@gmail.com</a>
-    <a href="https://linkedin.com/in/muhammad-khaled-essa" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a href="https://github.com/muhammad-khaled-essa" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+<div class="contact-bar-wrapper">
+    <div class="contact-bar">
+        <a href="tel:+201029036889"><i class="fas fa-phone"></i> +20 102 903 6889</a>
+        <span style="color:#1e293b;">|</span>
+        <a href="mailto:muhammadbenkhaled@gmail.com"><i class="fas fa-envelope"></i> muhammadbenkhaled@gmail.com</a>
+        <span style="color:#1e293b;">|</span>
+        <a href="https://linkedin.com/in/muhammad-khaled-essa" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <span style="color:#1e293b;">|</span>
+        <a href="https://github.com/muhammad-khaled-essa" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
 </div>
 
 <section id="about" class="reveal">
     <div class="container">
         <div class="section-header">
-            <h2>About Me</h2>
+            <h2>About <span style="color:#34d399;">Me</span></h2>
             <span class="underline"></span>
             <p>Junior Flutter Developer passionate about building impactful applications</p>
         </div>
         <div class="about-content">
-            <p>Junior Flutter Developer with hands-on experience building <strong>4+ cross-platform</strong> mobile and web applications using Clean Architecture, MVVM, Bloc/Cubit state management, Firebase backend services, REST API integration, and responsive UI design. Completed an intensive 6-month Flutter Development training program with the Digital Egypt Pioneers Initiative (DEPI), Ministry of Communications and Information Technology, where a team project won <strong style="color:#4f46e5;">Best Project</strong> in the cohort. Strong foundation in software engineering best practices, dependency injection (GetIt), local data persistence (Hive, SQLite), and Agile collaboration.</p>
+            <p>I started my programming journey back in <strong style="color:#34d399;">2020</strong>, then dove into Flutter in <strong style="color:#34d399;">2021</strong>, and since then I've built <strong style="color:#34d399;">many cross-platform</strong> mobile and web applications using Clean Architecture, MVVM, Bloc/Cubit state management, Firebase backend services, REST API integration, and responsive UI design. I also have a strong background in <strong style="color:#34d399;">Problem Solving</strong>, having solved a lot of algorithmic challenges that sharpened my analytical and coding skills. Completed an intensive 6-month Flutter Development training program with the <strong style="color:#34d399;">Digital Egypt Pioneers Initiative (DEPI)</strong>, Ministry of Communications and Information Technology, where a team project won <strong style="color:#34d399;">Best Project</strong> in the cohort. Strong foundation in software engineering best practices, dependency injection (GetIt), local data persistence (Hive, SQLite), and Agile collaboration.</p>
         </div>
     </div>
 </section>
@@ -68,7 +83,7 @@
 <section id="skills" class="reveal section-alt">
     <div class="container">
         <div class="section-header">
-            <h2>Technical Skills</h2>
+            <h2>Technical <span style="color:#34d399;">Skills</span></h2>
             <span class="underline"></span>
             <p>Technologies and tools I work with</p>
         </div>
@@ -103,11 +118,10 @@
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-image">
-                    <img src="project-gym.jpg" alt="Gym Management App" style="display:none;" id="img-gym">
-                    <span class="placeholder-icon"><i class="fas fa-dumbbell"></i></span>
+                    <img src="assets/gym_system_app.png" alt="Gym System App">
                 </div>
                 <div class="project-body">
-                    <h3>Gym Management App</h3>
+                    <h3>Gym System App</h3>
                     <p>Full gym management app for attendance tracking, membership/subscription management, and in-app equipment catalog for members.</p>
                     <div class="tech">
                         <span>Flutter</span>
@@ -116,12 +130,12 @@
                         <span>Firebase</span>
                         <span>GetIt</span>
                     </div>
+                    <a href="https://github.com/MuhammadDev01/gym_system" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="project-ecommerce.jpg" alt="E-Commerce App" style="display:none;" id="img-ecom">
-                    <span class="placeholder-icon"><i class="fas fa-cart-shopping"></i></span>
+                    <img src="assets/E_Commerce_Store_App.png" alt="E-Commerce Store App">
                 </div>
                 <div class="project-body">
                     <h3>E-Commerce Store App</h3>
@@ -132,12 +146,12 @@
                         <span>Bloc</span>
                         <span>REST API</span>
                     </div>
+                    <a href="https://github.com/MuhammadDev01/store_app" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="project-dashboard.jpg" alt="Admin Dashboard" style="display:none;" id="img-dash">
-                    <span class="placeholder-icon"><i class="fas fa-chart-bar"></i></span>
+                    <img src="assets/responsive_dashboard.png" alt="Admin Dashboard">
                 </div>
                 <div class="project-body">
                     <h3>Responsive Admin Dashboard</h3>
@@ -147,22 +161,23 @@
                         <span>Responsive UI</span>
                         <span>Adaptive UI</span>
                     </div>
+                    <a href="https://github.com/MuhammadDev01/responsive_dashboard" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="project-werd.jpg" alt="Muslim Werd App" style="display:none;" id="img-werd">
-                    <span class="placeholder-icon"><i class="fas fa-mosque"></i></span>
+                    <img src="assets/muslim_werd.png" alt="Muslim Werd App">
                 </div>
                 <div class="project-body">
                     <h3>Muslim Werd App</h3>
-                    <p>Islamic lifestyle app providing daily Quran reading (Werd), essential Azkar, and built-in live Quran radio stream.</p>
+                    <p>Islamic lifestyle app providing daily Quran reading (Werd), essential Azkar, and built-in live Quran radio stream with offline access.</p>
                     <div class="tech">
                         <span>Flutter</span>
                         <span>Bloc</span>
                         <span>Clean Arch</span>
                         <span>Hive</span>
                     </div>
+                    <a href="https://github.com/MuhammadDev01/muslim_werd_app" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                 </div>
             </div>
         </div>
@@ -210,54 +225,28 @@
 
 <footer>
     <div class="container">
-        &copy; 2025 Muhammad Khaled Essa &mdash; Built with <i class="fas fa-heart" style="color:#ef4444;"></i> using Flutter &amp; vanilla HTML/CSS
+        <span style="color:#64748b;">&copy; 2026-2027 <span style="color:#34d399;">Dev Muhmmad</span>. All rights reserved.</span>
     </div>
 </footer>
 
 <script>
     function revealOnScroll() {
-        const reveals = document.querySelectorAll('.reveal');
-        reveals.forEach(el => {
-            const windowHeight = window.innerHeight;
-            const elementTop = el.getBoundingClientRect().top;
-            const revealPoint = 100;
-            if (elementTop < windowHeight - revealPoint) {
+        document.querySelectorAll('.reveal').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight - 100) {
                 el.classList.add('active');
             }
         });
     }
-
     window.addEventListener('scroll', revealOnScroll);
     window.addEventListener('load', revealOnScroll);
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+            const t = document.querySelector(this.getAttribute('href'));
+            if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
     });
-
-    // Image upload helper — when you add images, remove the placeholder
-    function setupImage(inputId, imgId, placeholderId) {
-        const input = document.getElementById(inputId);
-        if (!input) return;
-        input.addEventListener('change', function(e) {
-            const file = e.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(ev) {
-                    const img = document.getElementById(imgId);
-                    img.src = ev.target.result;
-                    img.style.display = 'block';
-                    document.getElementById(placeholderId).style.display = 'none';
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-    }
 </script>
 
 </body>
